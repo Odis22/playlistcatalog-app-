@@ -1,0 +1,25 @@
+{% if item %}
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+<hr>
+
+<h2>{{playlistsong.name}}</h2>
+
+	<form action="#" method="post">
+	
+		<label>Name:</label>
+		<input type="text" name="name" value="{{playlistsong.name}}">
+		
+		<label>Artist:</label>
+		<input type="text" name="artist" value="{{playlistsong.artist}}">
+		
+		<label>genre:</label>
+		<input type="text" name="genre" value="{{playlistsong.genre}}">
+		
+		<ul class="button-list">
+		<li><input type="submit" value="Save"></li>
+		<li><a href="{{url_for('song', playlist_id=playlist.id)}}">Cancel</a></li>
+		</ul>
+	
+	</form>
+ 
+ 

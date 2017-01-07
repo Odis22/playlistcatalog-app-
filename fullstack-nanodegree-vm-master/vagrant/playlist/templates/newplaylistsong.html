@@ -1,0 +1,20 @@
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+<label>Name:</label>
+		<input type="text" name="name" value="{{playlistsong.name}}">
+		
+		<label>Artist:</label>
+		<input type="text" name="artist" value="{{playlistsong.artist}}">
+		
+		<label>genre:</label>
+		<input type="radio" name="genre" value="Pop">
+		<label for="Pop"> Pop</label>
+		<br>
+		<input type="radio" name="genre" value="country">
+		<label for="Country"> Country</label>
+		<br>
+		<input type="radio" name="genre" value="RnB">
+		<label for="RnB"> RnB</label>
+		<br>
+		<input type="radio" name="genre" value="Hip Hop">
+		<label for="Hip Hop"> Hip Hop</label>
+		<br>
